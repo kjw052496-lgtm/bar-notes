@@ -1,0 +1,42 @@
+{
+  "technique": [
+    { "id": "shake", "zh": "搖盪", "desc": "雪克杯加冰用力搖盪後濾出", "page": false },
+    { "id": "stir", "zh": "攪拌", "desc": "攪拌杯加冰攪拌降溫後濾出", "page": false },
+    { "id": "build", "zh": "直調", "desc": "材料直接倒進飲用的杯子裡完成", "page": false },
+    { "id": "muddle", "zh": "搗壓", "desc": "在杯中壓碎糖、水果或香草，釋出風味", "page": false },
+    { "id": "fat-wash", "zh": "油洗", "desc": "用油脂替烈酒增添風味，需事先製作", "page": true },
+    { "id": "infusion", "zh": "浸漬", "desc": "把食材泡在烈酒中萃取風味，需事先製作", "page": false }
+  ],
+  "base": [
+    { "id": "gin", "zh": "琴酒" },
+    { "id": "whiskey", "zh": "威士忌" },
+    { "id": "rum", "zh": "蘭姆酒" },
+    { "id": "tequila", "zh": "龍舌蘭" },
+    { "id": "vodka", "zh": "伏特加" },
+    { "id": "brandy", "zh": "白蘭地" }
+  ],
+  "family": [
+    { "id": "old-fashioned", "zh": "古典", "formula": "烈酒 + 糖 + 苦精" },
+    { "id": "martini", "zh": "馬丁尼", "formula": "烈酒 + 香艾酒等加香葡萄酒" },
+    { "id": "daiquiri", "zh": "黛綺莉", "formula": "烈酒 + 酸 + 糖" },
+    { "id": "sidecar", "zh": "側車", "formula": "烈酒 + 酸 + 利口酒" },
+    { "id": "highball", "zh": "高球", "formula": "烈酒 + 氣泡或非酒精飲料延長" },
+    { "id": "flip", "zh": "Flip", "formula": "烈酒 + 蛋或奶等增加濃郁度" }
+  ],
+  "glass": [
+    { "id": "rocks", "zh": "古典杯" },
+    { "id": "coupe", "zh": "碟形杯" },
+    { "id": "nick-and-nora", "zh": "尼克諾拉杯" },
+    { "id": "highball", "zh": "高球杯" },
+    { "id": "martini", "zh": "馬丁尼杯（雞尾酒杯）" },
+    { "id": "flute", "zh": "笛型杯" }
+  ],
+  "unit": [
+    { "id": "ml", "zh": "ml" },
+    { "id": "dash", "zh": "dash" },
+    { "id": "drop", "zh": "滴" },
+    { "id": "barspoon", "zh": "吧匙" },
+    { "id": "piece", "zh": "個" },
+    { "id": "top", "zh": "補滿" }
+  ]
+}

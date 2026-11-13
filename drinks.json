@@ -1,0 +1,119 @@
+[
+  {
+    "slug": "old-fashioned",
+    "name": "Old Fashioned",
+    "name_zh": "古典雞尾酒",
+    "technique": ["muddle", "build"],
+    "base": ["whiskey"],
+    "family": "old-fashioned",
+    "glass": "rocks",
+    "ingredients": [
+      { "item": "Bourbon or rye whiskey（波本或裸麥威士忌）", "amount": 45, "unit": "ml" },
+      { "item": "Sugar cube（方糖）", "amount": 1, "unit": "piece" },
+      { "item": "Angostura bitters（安格仕苦精）", "amount": null, "unit": "dash" },
+      { "item": "Plain water（清水）", "amount": null, "unit": "dash" }
+    ],
+    "steps": [
+      "將方糖放進古典杯，倒入苦精讓方糖吸滿，再加幾滴清水。",
+      "搗壓至方糖完全溶解。",
+      "杯中加滿冰塊，倒入威士忌。",
+      "輕輕攪拌。"
+    ],
+    "garnish": "柳橙片或柳橙皮，加一顆酒漬櫻桃",
+    "note": "烈酒、糖、苦精、水，雞尾酒最原始的樣子。",
+    "source": "https://iba-world.com/old-fashioned",
+    "added": "2026-11-13"
+  },
+  {
+    "slug": "daiquiri",
+    "name": "Daiquiri",
+    "name_zh": "黛綺莉",
+    "technique": ["shake"],
+    "base": ["rum"],
+    "family": "daiquiri",
+    "glass": "martini",
+    "ingredients": [
+      { "item": "White rum（白色蘭姆酒）", "amount": 60, "unit": "ml" },
+      { "item": "Fresh lime juice（新鮮萊姆汁）", "amount": 20, "unit": "ml" },
+      { "item": "Superfine sugar（細砂糖）", "amount": 2, "unit": "barspoon" }
+    ],
+    "steps": [
+      "將所有材料倒入雪克杯，先攪拌到糖溶解。",
+      "加入冰塊，用力搖盪。",
+      "濾入冰鎮過的雞尾酒杯。"
+    ],
+    "note": "只有三種材料，最能看出酸甜有沒有抓準。",
+    "source": "https://iba-world.com/daiquiri/",
+    "added": "2026-11-13"
+  },
+  {
+    "slug": "negroni",
+    "name": "Negroni",
+    "name_zh": "內格羅尼",
+    "technique": ["build"],
+    "base": ["gin"],
+    "family": "martini",
+    "glass": "rocks",
+    "ingredients": [
+      { "item": "Gin（琴酒）", "amount": 30, "unit": "ml" },
+      { "item": "Campari（金巴利）", "amount": 30, "unit": "ml" },
+      { "item": "Sweet red vermouth（甜紅香艾酒）", "amount": 30, "unit": "ml" }
+    ],
+    "steps": [
+      "古典杯先冰鎮，裝滿冰塊。",
+      "將所有材料直接倒入杯中。",
+      "輕輕攪拌。"
+    ],
+    "garnish": "半片柳橙",
+    "note": "三種材料等比例，好記也好做。",
+    "source": "https://iba-world.com/iba-official-cocktails/negroni/",
+    "added": "2026-11-13"
+  },
+  {
+    "slug": "whiskey-sour",
+    "name": "Whiskey Sour",
+    "name_zh": "威士忌酸酒",
+    "technique": ["shake"],
+    "base": ["whiskey"],
+    "family": "daiquiri",
+    "glass": "rocks",
+    "ingredients": [
+      { "item": "Bourbon whiskey（波本威士忌）", "amount": 45, "unit": "ml" },
+      { "item": "Fresh lemon juice（新鮮檸檬汁）", "amount": 25, "unit": "ml" },
+      { "item": "Sugar syrup（糖漿）", "amount": 20, "unit": "ml" },
+      { "item": "Egg white（蛋白）", "amount": null, "unit": "drop", "optional": true }
+    ],
+    "steps": [
+      "將所有材料倒入裝滿冰塊的雪克杯，用力搖盪。",
+      "有加蛋白的話，搖得更用力一些，讓泡沫充分成形。",
+      "濾入裝滿冰塊的古典杯。"
+    ],
+    "garnish": "半片柳橙與一顆酒漬櫻桃",
+    "note": "加蛋白會多一層綿密泡沫。生蛋請用新鮮、經殺菌處理的蛋。",
+    "source": "https://iba-world.com/whiskey-sour/",
+    "added": "2026-11-13"
+  },
+  {
+    "slug": "bentons-old-fashioned",
+    "name": "Benton's Old Fashioned",
+    "name_zh": "培根古典",
+    "technique": ["fat-wash", "stir"],
+    "base": ["whiskey"],
+    "family": "old-fashioned",
+    "glass": "rocks",
+    "ingredients": [
+      { "item": "Bacon fat-washed bourbon（培根油洗波本）", "amount": 60, "unit": "ml" },
+      { "item": "Grade B maple syrup（B 級楓糖漿）", "amount": 7.5, "unit": "ml" },
+      { "item": "Angostura bitters（安格仕苦精）", "amount": 2, "unit": "dash" }
+    ],
+    "steps": [
+      "將所有材料倒入攪拌杯，加入冰塊。",
+      "攪拌至充分降溫。",
+      "濾入放有一顆大冰塊的古典杯。"
+    ],
+    "garnish": "柳橙皮",
+    "note": "PDT 酒吧 Don Lee 的作品，把 fat-washing 帶進調酒界。培根油洗波本的做法請看油洗技法頁。",
+    "source": "https://punchdrink.com/recipes/bentons-old-fashioned/",
+    "added": "2026-11-13"
+  }
+]

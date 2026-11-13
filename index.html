@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 80'%3E%3Cpath d='M9 22H51L49 76H11Z' fill='%23c8963e'/%3E%3C/svg%3E">
+  <title>吧檯筆記｜經典調酒配方</title>
+  <meta name="description" content="經典調酒配方筆記，依技法、基底、家族分類。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="index">
+  <header class="site-header">
+    <div class="wrap"><a class="brand" href="index.html">吧檯筆記</a></div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <h1>今晚調哪一杯？</h1>
+        <p class="lead">經典調酒的配方筆記。用技法、基底、家族篩選，每一杯都附上份量、做法和出處。</p>
+      </section>
+
+      <div id="filters" class="filters" aria-label="篩選調酒" data-error-target></div>
+      <div id="result-bar" class="result-bar" aria-live="polite"></div>
+      <ul id="drink-list" class="drink-list"></ul>
+
+      <section id="technique-index" class="technique-index" hidden>
+        <h2>技法筆記</h2>
+        <ul></ul>
+      </section>
+
+      <noscript><p class="empty">這個網站需要開啟 JavaScript 才能顯示調酒清單。</p></noscript>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">飲酒過量，有礙健康｜未成年請勿飲酒｜喝酒不開車</div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

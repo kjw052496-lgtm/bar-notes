@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 80'%3E%3Cpath d='M9 22H51L49 76H11Z' fill='%23c8963e'/%3E%3C/svg%3E">
+  <!-- 改成：<技法中文名>｜吧檯筆記 -->
+  <title>技法名稱｜吧檯筆記</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<!--
+  技法頁範本（不要直接修改這個檔案）。
+  使用方式見 CLAUDE.md 流程 B：
+  1. 複製成 techniques/<technique-id>.html
+  2. 把 data-technique 改成該技法在 data/tags.json 裡的 id
+  3. 依序填寫下面的區塊，不增減、不調換順序
+  4. 「用到這個技法的調酒」由 main.js 自動產生，不要手寫
+-->
+<body data-page="technique" data-technique="TECHNIQUE-ID" data-root="..">
+  <header class="site-header">
+    <div class="wrap"><a class="brand" href="../index.html">吧檯筆記</a></div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <a class="back" href="../index.html">回到所有調酒</a>
+
+      <article class="prose">
+        <h1>技法中文名</h1>
+        <p class="latin-name">English name</p>
+
+        <!-- 1. 一句話說明 -->
+        <p class="lead">一句話說明這個技法在做什麼。</p>
+
+        <!-- 2. 原理 -->
+        <h2>原理</h2>
+        <p>為什麼這個技法有效。</p>
+
+        <!-- 3. 器材 -->
+        <h2>器材</h2>
+        <ul>
+          <li>器材</li>
+        </ul>
+
+        <!-- 4. 步驟 -->
+        <h2>步驟</h2>
+        <ol>
+          <li>步驟，動詞開頭，句號結尾。</li>
+        </ol>
+
+        <!-- 5. 常見錯誤 -->
+        <h2>常見錯誤</h2>
+        <ul>
+          <li><strong>錯誤</strong>：會造成什麼結果、怎麼避免。</li>
+        </ul>
+
+        <!-- 6. 安全注意（涉及生蛋、油脂保存、高溫等才需要；不需要就整段刪掉） -->
+        <h2>安全注意</h2>
+        <div class="callout">
+          <p>注意事項。</p>
+        </div>
+
+        <!-- 7. 用到這個技法的調酒（自動產生，不要手寫） -->
+        <h2>用到這個技法的調酒</h2>
+        <div id="technique-drinks" data-error-target></div>
+
+        <!-- 8. 參考來源 -->
+        <h2>參考來源</h2>
+        <ul class="sources">
+          <li><a href="https://..." target="_blank" rel="noopener">來源名稱：文章標題</a></li>
+        </ul>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">飲酒過量，有礙健康｜未成年請勿飲酒｜喝酒不開車</div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

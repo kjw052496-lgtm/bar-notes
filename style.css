@@ -1,0 +1,615 @@
+/* ============================================================
+   吧檯筆記 — 共用樣式
+   AI 不准修改這個檔案（見 CLAUDE.md 第 9 節）。
+   ============================================================ */
+
+:root {
+  /* 基本色票（見 CLAUDE.md 第 3 節） */
+  --bg: #14110f;
+  --surface: #1f1a17;
+  --border: #3a322c;
+  --text: #ece4d8;
+  --muted: #a59a8c;
+  --accent: #c8963e;
+  --accent-2: #8b2e2e;
+
+  /* 杯中液體分層用色，依材料順序循環使用 */
+  --pour-1: #c8963e;
+  --pour-2: #8b2e2e;
+  --pour-3: #e0c48a;
+  --pour-4: #6b4a2e;
+
+  --font-latin: "Playfair Display", "Noto Serif TC", Georgia, serif;
+  --font-serif: "Noto Serif TC", "Songti TC", serif;
+  --font-sans: "Noto Sans TC", "PingFang TC", system-ui, sans-serif;
+
+  --measure: 960px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.75;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* ---------- 頁首與頁尾 ---------- */
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  height: 3.5rem;
+}
+
+.brand {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.125rem;
+  letter-spacing: 0.08em;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.brand:hover {
+  color: var(--accent);
+}
+
+main {
+  flex: 1;
+  padding: 3rem 0 4rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+
+/* ---------- 首頁 ---------- */
+
+.hero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 7vw, 4rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  margin: 0 0 0.75rem;
+}
+
+.lead {
+  color: var(--muted);
+  font-size: 1.0625rem;
+  max-width: 38em;
+  margin: 0;
+}
+
+.filters {
+  margin: 2.5rem 0 1.25rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.filter-row {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: 0.75rem;
+  align-items: start;
+  padding: 0.5rem 0;
+}
+
+.filter-label {
+  font-family: var(--font-serif);
+  color: var(--muted);
+  padding-top: 0.35rem;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  font: inherit;
+  font-size: 0.875rem;
+  line-height: 1;
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.chip:hover {
+  border-color: var(--accent);
+}
+
+.chip[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+}
+
+.chip .count {
+  margin-left: 0.4em;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.chip[aria-pressed="true"] .count {
+  color: inherit;
+  opacity: 0.7;
+}
+
+.chip.is-empty:not([aria-pressed="true"]) {
+  opacity: 0.4;
+}
+
+.result-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.text-btn {
+  font: inherit;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.text-btn:hover {
+  color: var(--text);
+}
+
+/* 調酒清單：像酒單一樣一行一杯 */
+
+.drink-list {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+}
+
+.drink-list > li {
+  border-bottom: 1px solid var(--border);
+}
+
+.drink-link {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr auto;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1.25rem 0.25rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.drink-link:hover .drink-name {
+  color: var(--accent);
+}
+
+.drink-name {
+  font-family: var(--font-latin);
+  font-size: 1.625rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.drink-zh {
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.drink-main .drink-name,
+.drink-main .drink-zh {
+  display: block;
+}
+
+.drink-glass {
+  display: block;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-top: 0.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.tag {
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  padding: 0 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  text-decoration: none;
+}
+
+a.tag:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+.drink-family {
+  text-align: right;
+  font-family: var(--font-serif);
+}
+
+.drink-family small {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.empty {
+  padding: 2.5rem 0;
+  color: var(--muted);
+}
+
+.technique-index {
+  margin-top: 4rem;
+}
+
+.technique-index ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.technique-index li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.technique-index li p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+/* ---------- 杯子圖示 ---------- */
+
+.glass {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.glass .outline {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.glass .liquid {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+
+.glass--large .liquid {
+  animation: pour 1100ms cubic-bezier(0.22, 0.8, 0.3, 1) both;
+}
+
+@keyframes pour {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+/* ---------- 單杯頁 ---------- */
+
+.back {
+  display: inline-block;
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+}
+
+.drink-head h1 {
+  font-family: var(--font-latin);
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 500;
+  line-height: 1.05;
+  margin: 0;
+}
+
+.drink-head .drink-zh {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  margin: 0.5rem 0 0;
+}
+
+.family-line {
+  margin: 1.25rem 0 0;
+  color: var(--muted);
+}
+
+.family-line strong {
+  color: var(--text);
+  font-family: var(--font-serif);
+  font-weight: 600;
+}
+
+.spec {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: 3rem;
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.spec-glass p {
+  margin: 0.75rem 0 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.spec h2,
+.prose h2,
+.technique-index h2 {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 2.25rem 0 0.75rem;
+}
+
+.spec-body > h2:first-child {
+  margin-top: 0;
+}
+
+.ingredients {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ingredients td {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  vertical-align: baseline;
+}
+
+.ingredients .swatch-cell {
+  width: 1.5rem;
+}
+
+.swatch {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 2px;
+  border: 1px solid var(--border);
+}
+
+.ingredients .amount {
+  text-align: right;
+  white-space: nowrap;
+  padding-left: 1rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.optional {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.steps {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.steps li {
+  padding: 0.2rem 0;
+}
+
+.steps li::marker {
+  color: var(--accent);
+  font-family: var(--font-latin);
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1.5rem;
+  margin: 0;
+}
+
+.facts dt {
+  color: var(--muted);
+}
+
+.facts dd {
+  margin: 0;
+}
+
+.note {
+  margin: 2.25rem 0 0;
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--accent-2);
+  background: var(--surface);
+  font-family: var(--font-serif);
+}
+
+.source {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+  word-break: break-all;
+}
+
+/* ---------- 技法頁 ---------- */
+
+.prose {
+  max-width: 40em;
+}
+
+.prose h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 7vw, 4rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.prose .latin-name {
+  font-family: var(--font-latin);
+  font-style: italic;
+  font-size: 1.375rem;
+  color: var(--muted);
+  margin: 0.25rem 0 0;
+}
+
+.prose .lead {
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+  color: var(--text);
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  padding: 0.15rem 0;
+}
+
+.prose ol > li::marker {
+  color: var(--accent);
+  font-family: var(--font-latin);
+}
+
+.callout {
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--accent-2);
+  background: var(--surface);
+}
+
+.callout p {
+  margin: 0;
+}
+
+.callout p + p {
+  margin-top: 0.5rem;
+}
+
+.sources {
+  font-size: 0.875rem;
+  color: var(--muted);
+  word-break: break-word;
+}
+
+/* ---------- 錯誤訊息 ---------- */
+
+.load-error {
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--accent-2);
+  background: var(--surface);
+}
+
+.load-error code {
+  color: var(--accent);
+}
+
+/* ---------- 手機 ---------- */
+
+@media (max-width: 640px) {
+  main {
+    padding-top: 2rem;
+  }
+
+  .drink-link {
+    grid-template-columns: 2.75rem 1fr;
+    gap: 1rem;
+  }
+
+  .drink-family {
+    grid-column: 2;
+    text-align: left;
+  }
+
+  .drink-family small {
+    display: inline;
+    margin-left: 0.5rem;
+  }
+
+  .spec {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .spec-glass {
+    width: 8rem;
+    margin: 0 auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glass--large .liquid {
+    animation: none;
+  }
+}
