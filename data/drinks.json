@@ -115,5 +115,185 @@
     "note": "PDT 酒吧 Don Lee 的作品，把 fat-washing 帶進調酒界。培根油洗波本的做法請看油洗技法頁。",
     "source": "https://punchdrink.com/recipes/bentons-old-fashioned/",
     "added": "2026-11-13"
+  },
+  {
+    "slug": "dry-martini",
+    "name": "Dry Martini",
+    "name_zh": "不甜馬丁尼",
+    "technique": ["stir"],
+    "base": ["gin"],
+    "family": "martini",
+    "glass": "martini",
+    "ingredients": [
+      { "item": "Gin（琴酒）", "amount": 60, "unit": "ml" },
+      { "item": "Dry vermouth（不甜香艾酒）", "amount": 10, "unit": "ml" }
+    ],
+    "steps": [
+      "將所有材料倒入裝有冰塊的攪拌杯，充分攪拌。",
+      "濾入冰鎮過的馬丁尼杯。"
+    ],
+    "garnish": "在酒面擠壓檸檬皮油；也可依喜好改放綠橄欖",
+    "note": "只有琴酒和香艾酒兩種材料，最考驗攪拌的功夫。",
+    "source": "https://iba-world.com/iba-cocktail/dry-martini",
+    "added": "2026-11-13"
+  },
+  {
+    "slug": "manhattan",
+    "name": "Manhattan",
+    "name_zh": "曼哈頓",
+    "technique": ["stir"],
+    "base": ["whiskey"],
+    "family": "martini",
+    "glass": "martini",
+    "ingredients": [
+      { "item": "Rye whiskey（裸麥威士忌）", "amount": 50, "unit": "ml" },
+      { "item": "Sweet red vermouth（甜紅香艾酒）", "amount": 20, "unit": "ml" },
+      { "item": "Angostura bitters（安格仕苦精）", "amount": 1, "unit": "dash" }
+    ],
+    "steps": [
+      "將所有材料倒入裝有冰塊的攪拌杯。",
+      "充分攪拌。",
+      "濾入冰鎮過的雞尾酒杯。"
+    ],
+    "garnish": "一顆酒漬櫻桃",
+    "note": "威士忌版本的馬丁尼結構：烈酒加香艾酒，再補一抖苦精。",
+    "source": "https://iba-world.com/manhattan/",
+    "added": "2026-11-13"
+  },
+  {
+    "slug": "margarita",
+    "name": "Margarita",
+    "name_zh": "瑪格麗特",
+    "technique": ["shake"],
+    "base": ["tequila"],
+    "family": "sidecar",
+    "glass": "martini",
+    "ingredients": [
+      { "item": "100% agave tequila（100% 龍舌蘭）", "amount": 50, "unit": "ml" },
+      { "item": "Triple sec（橙皮酒）", "amount": 20, "unit": "ml" },
+      { "item": "Fresh lime juice（新鮮萊姆汁）", "amount": 15, "unit": "ml" }
+    ],
+    "steps": [
+      "將所有材料倒入裝有冰塊的雪克杯。",
+      "搖盪後濾入冰鎮過的雞尾酒杯。"
+    ],
+    "garnish": "杯緣沾半圈鹽（可省略）",
+    "note": "可以把它想成龍舌蘭版的 Sidecar：白蘭地換成龍舌蘭，檸檬換成萊姆。",
+    "source": "https://iba-world.com/iba-cocktail/margarita",
+    "added": "2026-11-13"
+  },
+  {
+    "slug": "sidecar",
+    "name": "Sidecar",
+    "name_zh": "側車",
+    "technique": ["shake"],
+    "base": ["brandy"],
+    "family": "sidecar",
+    "glass": "martini",
+    "ingredients": [
+      { "item": "Cognac（干邑白蘭地）", "amount": 50, "unit": "ml" },
+      { "item": "Triple sec（橙皮酒）", "amount": 20, "unit": "ml" },
+      { "item": "Fresh lemon juice（新鮮檸檬汁）", "amount": 20, "unit": "ml" }
+    ],
+    "steps": [
+      "將所有材料倒入雪克杯，加冰用力搖盪。",
+      "濾入冰鎮過的雞尾酒杯。"
+    ],
+    "note": "側車家族的名字就來自這杯：烈酒、酸，再用利口酒取代糖。",
+    "source": "https://iba-world.com/sidecar/",
+    "added": "2026-11-13"
+  },
+  {
+    "slug": "cosmopolitan",
+    "name": "Cosmopolitan",
+    "name_zh": "柯夢波丹",
+    "technique": ["shake"],
+    "base": ["vodka"],
+    "family": "sidecar",
+    "glass": "martini",
+    "ingredients": [
+      { "item": "Vodka citron（檸檬風味伏特加）", "amount": 40, "unit": "ml" },
+      { "item": "Cointreau（君度橙酒）", "amount": 15, "unit": "ml" },
+      { "item": "Fresh lime juice（新鮮萊姆汁）", "amount": 15, "unit": "ml" },
+      { "item": "Cranberry juice（蔓越莓汁）", "amount": 30, "unit": "ml" }
+    ],
+    "steps": [
+      "將所有材料倒入裝滿冰塊的雪克杯。",
+      "用力搖盪，濾入大型雞尾酒杯。"
+    ],
+    "garnish": "檸檬皮",
+    "note": "蔓越莓汁讓它變成粉紅色，骨架仍然是烈酒、酸、橙酒。",
+    "source": "https://www.iba-world.com/cosmopolitan",
+    "added": "2026-11-13"
+  },
+  {
+    "slug": "porto-flip",
+    "name": "Porto Flip",
+    "name_zh": "波特 Flip",
+    "technique": ["shake"],
+    "base": ["brandy"],
+    "family": "flip",
+    "glass": "martini",
+    "ingredients": [
+      { "item": "Brandy（白蘭地）", "amount": 15, "unit": "ml" },
+      { "item": "Red tawny port wine（茶色波特酒）", "amount": 45, "unit": "ml" },
+      { "item": "Egg yolk（蛋黃）", "amount": 10, "unit": "ml" }
+    ],
+    "steps": [
+      "將所有材料倒入雪克杯，加冰用力搖盪。",
+      "濾入冰鎮過的雞尾酒杯。"
+    ],
+    "garnish": "撒上現磨肉豆蔻",
+    "note": "蛋黃讓口感濃郁滑順。生蛋請用新鮮、經殺菌處理的蛋。",
+    "source": "https://iba-world.com/porto-flip/",
+    "added": "2026-11-13"
+  },
+  {
+    "slug": "paloma",
+    "name": "Paloma",
+    "name_zh": "帕洛瑪",
+    "technique": ["build"],
+    "base": ["tequila"],
+    "family": "highball",
+    "glass": "highball",
+    "ingredients": [
+      { "item": "100% agave tequila（100% 龍舌蘭）", "amount": 50, "unit": "ml" },
+      { "item": "Fresh lime juice（新鮮萊姆汁）", "amount": 5, "unit": "ml" },
+      { "item": "Salt（鹽）", "amount": null, "unit": "dash" },
+      { "item": "Pink grapefruit soda（粉紅葡萄柚汽水）", "amount": 100, "unit": "ml" }
+    ],
+    "steps": [
+      "將龍舌蘭倒入高球杯，擠入萊姆汁。",
+      "加入冰塊和一小撮鹽，倒入葡萄柚汽水補滿。",
+      "輕輕攪拌。"
+    ],
+    "garnish": "萊姆片",
+    "note": "不用雪克杯也不用攪拌杯，直接在杯裡完成的墨西哥長飲。",
+    "source": "https://iba-world.com/?p=282",
+    "added": "2026-11-13"
+  },
+  {
+    "slug": "earl-grey-marteani",
+    "name": "Earl Grey MarTEAni",
+    "name_zh": "伯爵茶馬丁尼",
+    "technique": ["infusion", "shake"],
+    "base": ["gin"],
+    "family": "daiquiri",
+    "glass": "martini",
+    "ingredients": [
+      { "item": "Earl Grey tea-infused gin（伯爵茶浸漬琴酒）", "amount": 45, "unit": "ml" },
+      { "item": "Fresh lemon juice（新鮮檸檬汁）", "amount": 22.5, "unit": "ml" },
+      { "item": "Simple syrup（糖漿）", "amount": 30, "unit": "ml" },
+      { "item": "Egg white（蛋白）", "amount": 1, "unit": "piece" }
+    ],
+    "steps": [
+      "將所有材料倒入雪克杯。",
+      "加入冰塊，用力搖盪約 10 秒。",
+      "濾入冰鎮過、半圈杯緣沾糖的馬丁尼杯。"
+    ],
+    "garnish": "檸檬皮",
+    "note": "Audrey Saunders 在紐約 Pegu Club 的作品，名字有馬丁尼，其實是一杯琴酒酸酒。伯爵茶琴酒的做法請看浸漬技法頁。生蛋請用新鮮、經殺菌處理的蛋。",
+    "source": "https://punchdrink.com/recipes/earl-grey-marteani/",
+    "added": "2026-11-13"
   }
 ]

@@ -5,7 +5,7 @@
     { "id": "build", "zh": "直調", "desc": "材料直接倒進飲用的杯子裡完成", "page": false },
     { "id": "muddle", "zh": "搗壓", "desc": "在杯中壓碎糖、水果或香草，釋出風味", "page": false },
     { "id": "fat-wash", "zh": "油洗", "desc": "用油脂替烈酒增添風味，需事先製作", "page": true },
-    { "id": "infusion", "zh": "浸漬", "desc": "把食材泡在烈酒中萃取風味，需事先製作", "page": false }
+    { "id": "infusion", "zh": "浸漬", "desc": "把食材泡在烈酒中萃取風味，需事先製作", "page": true }
   ],
   "base": [
     { "id": "gin", "zh": "琴酒" },
